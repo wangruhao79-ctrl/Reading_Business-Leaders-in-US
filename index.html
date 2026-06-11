@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology Leaders Reading Practice</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:30px;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section-title{
+    background:#ffb300;
+    color:#000;
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+button{
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#1259a8;
+}
+
+.correct{
+    color:green;
+    font-weight:bold;
+}
+
+.incorrect{
+    color:red;
+    font-weight:bold;
+}
+
+.feedback{
+    margin-left:10px;
+}
+
+select,input{
+    padding:6px;
+    border-radius:6px;
+    border:1px solid #bbb;
+}
+
+.reading{
+    background:#fdfdfd;
+    border-left:5px solid #2196f3;
+    padding:15px;
+    margin-top:15px;
+}
+
+details{
+    margin-bottom:12px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#1565c0;
+}
+
+.question{
+    margin:10px 0;
+}
+
+.score{
+    font-size:20px;
+    font-weight:bold;
+    color:#0d47a1;
+    margin-top:15px;
+}
+
+.discussion{
+    background:#fff8e1;
+    padding:15px;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:8px;
+    vertical-align:top;
+}
+
+.word{
+    font-weight:600;
+}
+
+@media(max-width:768px){
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 Technology Leaders Reading Practice</h1>
+
+<!-- SECTION 1 -->
+
+<div class="section">
+
+<div class="section-title">01. Match the Words and Meanings</div>
+
+<table>
+
+<tr>
+<td class="word">1. entrepreneur</td>
+<td>
+<select id="m1">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select>
+<span id="f1"></span>
+</td>
+</tr>
+
+<tr>
+<td class="word">2. innovation</td>
+<td><select id="m2">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f2"></span></td>
+</tr>
+
+<tr>
+<td class="word">3. software</td>
+<td><select id="m3">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f3"></span></td>
+</tr>
+
+<tr>
+<td class="word">4. social media</td>
+<td><select id="m4">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f4"></span></td>
+</tr>
+
+<tr>
+<td class="word">5. electric vehicle</td>
+<td><select id="m5">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f5"></span></td>
+</tr>
+
+<tr>
+<td class="word">6. philanthropy</td>
+<td><select id="m6">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f6"></span></td>
+</tr>
+
+<tr>
+<td class="word">7. visionary</td>
+<td><select id="m7">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f7"></span></td>
+</tr>
+
+<tr>
+<td class="word">8. launch</td>
+<td><select id="m8">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f8"></span></td>
+</tr>
+
+<tr>
+<td class="word">9. communication</td>
+<td><select id="m9">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f9"></span></td>
+</tr>
+
+<tr>
+<td class="word">10. technology</td>
+<td><select id="m10">
+<option value="">Choose</option>
+<option>a</option><option>b</option><option>c</option><option>d</option>
+<option>e</option><option>f</option><option>g</option><option>h</option>
+<option>i</option><option>j</option>
+</select><span id="f10"></span></td>
+</tr>
+
+</table>
+
+<h3>Meanings</h3>
+<p>
+a. giving money and help to improve people's lives<br>
+b. a person who starts and runs a business<br>
+c. the use of scientific knowledge to solve problems<br>
+d. programs used on a computer<br>
+e. sharing information and ideas with others<br>
+f. a new idea, method, or product<br>
+g. someone with creative ideas about the future<br>
+h. websites and apps that help people connect online<br>
+i. introduce a new product or service to the public<br>
+j. a car powered by electricity
+</p>
+
+<button onclick="checkMatching()">Check Answers</button>
+
+</div>
+
+<!-- SECTION 2 -->
+
+<div class="section">
+
+<div class="section-title">02. Fill in the Blanks</div>
+
+<p>Use the correct word.</p>
+
+<div class="question">1. Steve Jobs was a successful <input id="b1"></div>
+<div class="question">2. Microsoft became famous for developing computer <input id="b2"></div>
+<div class="question">3. Facebook is one of the world's largest <input id="b3"></div>
+<div class="question">4. Elon Musk promotes the use of <input id="b4"></div>
+<div class="question">5. Good <input id="b5"> skills are important for business leaders.</div>
+<div class="question">6. New inventions often come from creativity and <input id="b6"></div>
+<div class="question">7. Bill Gates is known for his charitable work and <input id="b7"></div>
+<div class="question">8. Apple plans to <input id="b8"> a new product next year.</div>
+<div class="question">9. Modern <input id="b9"> has changed the way people work and study.</div>
+<div class="question">10. Many people describe Steve Jobs as a <input id="b10"> leader.</div>
+
+<button onclick="checkBlanks()">Check Answers</button>
+<div id="blankResult"></div>
+
+</div>
+
+<!-- SECTION 3 -->
+
+<div class="section">
+
+<div class="section-title">03. BEFORE YOU READ</div>
+
+<h3>What qualities make a successful business leader?</h3>
+
+<div class="reading">
+
+<h2>Four Technology Leaders Who Changed the World</h2>
+
+<details open>
+<summary>A. Steve Jobs</summary>
+
+<p>
+Steve Jobs was born in California, USA, in 1955. In 1976, he co-founded Apple with Steve Wozniak. Jobs believed that technology should be simple, beautiful, and easy to use. His attention to design and user experience helped Apple create famous products such as the Macintosh computer, the iPod, the iPhone, and the iPad.
+</p>
+
+<p>
+When Apple first started, personal computers were not common in many homes. Jobs wanted to create products that ordinary people could use easily. His ideas helped change the way people listen to music, communicate, work, and access information. Many of Apple's products became best-sellers around the world.
+</p>
+
+<p>
+Although he faced difficulties during his career and even left Apple for several years, he later returned to the company and led it to great success. Today, Jobs is remembered as one of the most creative and influential business leaders in history.
+</p>
+
+</details>
+
+<details>
+<summary>B. Mark Zuckerberg</summary>
+
+<p>
+Mark Zuckerberg developed an interest in computers when he was young. While studying at Harvard University, he created Facebook, a website that helped people communicate and share information online.
+</p>
+
+<p>
+What began as a small project for university students quickly grew into one of the largest social media platforms in the world. Millions of people use Facebook every day to stay in touch with friends and family, share photos, and learn about current events.
+</p>
+
+<p>
+Zuckerberg believes technology can connect people across countries and cultures. He has also invested in projects related to artificial intelligence and virtual reality. Today, he remains one of the most influential figures in the technology industry.
+</p>
+
+</details>
+
+<details>
+<summary>C. Elon Musk</summary>
+
+<p>
+Elon Musk was born in South Africa and later moved to North America. He is the CEO of Tesla and SpaceX. Through Tesla, he promotes electric vehicles and renewable energy. Through SpaceX, he works on making space travel more affordable.
+</p>
+
+<p>
+Musk believes that technology can help solve some of the world's biggest challenges. His work with Tesla encourages people to use cleaner forms of transportation, while SpaceX develops advanced rockets that can be reused, helping reduce the cost of space missions.
+</p>
+
+<p>
+Musk is famous for setting ambitious goals. He hopes that one day humans will be able to live on other planets. Although many of his projects are challenging, he continues to inspire people with his innovative ideas and determination.
+</p>
+
+</details>
+
+<details>
+<summary>D. Bill Gates</summary>
+
+<p>
+Bill Gates co-founded Microsoft in 1975. The company developed software that became widely used around the world, including the Windows operating system. Microsoft's success helped make personal computers common in homes and offices.
+</p>
+
+<p>
+As Microsoft grew, Gates became one of the world's most successful entrepreneurs. His work in software transformed the way people use computers for education, communication, and business.
+</p>
+
+<p>
+Later in life, Gates focused more on philanthropy. Through the Bill & Melinda Gates Foundation, he supports projects that improve global health, education, and poverty reduction. Today, he is respected for both his business achievements and charitable contributions.
+</p>
+
+</details>
+
+</div>
+<h3>Match the Person</h3>
+
+<div class="question">1. Co-founded Microsoft
+<select id="p1"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">2. Created a social networking platform
+<select id="p2"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">3. Wanted technology to be simple and attractive
+<select id="p3"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">4. Involved in electric vehicles
+<select id="p4"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">5. Supports health and education projects
+<select id="p5"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">6. Hopes humans will live on other planets
+<select id="p6"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">7. Created Facebook at university
+<select id="p7"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">8. Helped develop the iPhone
+<select id="p8"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">9. Known for charitable work
+<select id="p9"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<div class="question">10. Visionary leader
+<select id="p10"><option></option><option>A</option><option>B</option><option>C</option><option>D</option></select></div>
+
+<button onclick="checkPeople()">Check Answers</button>
+
+</div>
+
+<!-- SECTION 5 -->
+
+<div class="section">
+
+<div class="section-title">05. True / False / Not Given</div>
+
+<div class="question">1.
+<select id="t1"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Steve Jobs founded Apple by himself.
+</div>
+
+<div class="question">2.
+<select id="t2"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Apple created products such as the iPhone and iPad.
+</div>
+
+<div class="question">3.
+<select id="t3"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Zuckerberg created Facebook after graduating from university.
+</div>
+
+<div class="question">4.
+<select id="t4"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Facebook helps people communicate online.
+</div>
+
+<div class="question">5.
+<select id="t5"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Elon Musk was born in the United States.
+</div>
+
+<div class="question">6.
+<select id="t6"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Tesla produces electric vehicles.
+</div>
+
+<div class="question">7.
+<select id="t7"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Musk hopes humans will live on other planets.
+</div>
+
+<div class="question">8.
+<select id="t8"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Bill Gates co-founded Microsoft in 1975.
+</div>
+
+<div class="question">9.
+<select id="t9"><option></option><option>T</option><option>F</option><option>NG</option></select>
+The passage states that Gates studied at Harvard University.
+</div>
+
+<div class="question">10.
+<select id="t10"><option></option><option>T</option><option>F</option><option>NG</option></select>
+Bill Gates supports projects related to health and education.
+</div>
+
+<button onclick="checkTF()">Check Answers</button>
+
+</div>
+
+<!-- SECTION 6 -->
+
+<div class="section">
+
+<div class="section-title">06. Discussion</div>
+
+<div class="discussion">
+<ul>
+<li>Which person do you like the most? Why?</li>
+<li>What qualities do successful entrepreneurs have?</li>
+<li>Would you like to start your own company in the future?</li>
+<li>How do you think technology will change our lives in the next 20 years?</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function tick(id,correct){
+document.getElementById(id).innerHTML=
+correct?
+'<span class="correct"> ✓</span>':
+'<span class="incorrect"> ✗</span>';
+}
+
+function checkMatching(){
+
+const ans=['b','f','d','h','j','a','g','i','e','c'];
+
+for(let i=1;i<=10;i++){
+tick('f'+i,
+document.getElementById('m'+i).value===ans[i-1]);
+}
+}
+
+function checkBlanks(){
+
+const answers=[
+'entrepreneur',
+'software',
+'social media',
+'electric vehicle',
+'communication',
+'innovation',
+'philanthropy',
+'launch',
+'technology',
+'visionary'
+];
+
+let score=0;
+
+for(let i=1;i<=10;i++){
+
+let user=document.getElementById('b'+i)
+.value.toLowerCase().trim();
+
+if(user===answers[i-1]){
+score++;
+}
+}
+
+document.getElementById('blankResult').innerHTML=
+"<div class='score'>Score: "+score+"/10</div>";
+}
+
+function checkPeople(){
+
+const ans=['D','B','A','C','D','C','B','A','D','A'];
+
+let score=0;
+
+for(let i=1;i<=10;i++){
+if(document.getElementById('p'+i).value===ans[i-1]){
+score++;
+}
+}
+
+alert("People Matching Score: "+score+"/10");
+}
+
+function checkTF(){
+
+const ans=['F','T','F','T','F','T','T','T','NG','T'];
+
+let score=0;
+
+for(let i=1;i<=10;i++){
+if(document.getElementById('t'+i).value===ans[i-1]){
+score++;
+}
+}
+
+alert("T/F/NG Score: "+score+"/10");
+}
+
+</script>
+
+</body>
+</html>
